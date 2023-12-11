@@ -7,7 +7,7 @@ window.addEventListener('message', function(event) {
         Object.entries(config.Jobs).forEach(([jobKey, job]) => {
             var dynamicContent = `
             <div class="mx-auto max-w-md overflow-hidden rounded-lg h-[51rem] bg-slate-900 mb-10" style="display: none" id="job-${jobKey}">
-                <img src="./img/${job.image}" class="aspect-video w-full object-cover opacity-50" alt="" />
+                <img src="${job.image}" class="aspect-video w-full object-cover opacity-50" alt="" />
                 <div class="p-4">
                     <a class="text-xl font-medium text-gray-300">${job.name}</a>
                     <p class="text-xs font-medium text-gray-500">${job.description}</p>

@@ -6,20 +6,21 @@ version '1.2.0'
 
 ui_page 'html/index.html'
 
-shared_script '@es_extended/imports.lua'
+shared_script {
+    "config.lua",
+    '@ox_lib/init.lua',
+    '@es_extended/imports.lua'
+}
 
 client_scripts {
     'client/cl_main.lua',
 }
 
 server_scripts {
-    'config.lua',
     'server/sv_main.lua',
 }
 
 files {
-    'html/img/*.png',
-    'html/img/*.jpg',
     'html/index.html',
     'html/style.css',
     'html/script.js',
