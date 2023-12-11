@@ -29,7 +29,7 @@ AddEventHandler('ss-jobcenter:client:setup', function()
         FreezeEntityPosition(ped, true)
         SetEntityInvincible(ped, true)
         SetBlockingOfNonTemporaryEvents(ped, true)
-        exports.ox_target:addModel(v.model,{
+        exports.ox_target:addLocalEntity(ped,{
             name = 'menu',
             serverEvent = 'ss-jobcenter:server:openJobCenter',
             icon = 'fa-solid fa-suitcase',
